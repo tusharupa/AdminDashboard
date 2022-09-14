@@ -85,8 +85,7 @@ color: rgb(85, 85, 85);
     background-color: yellow;
     border-radius: 20px;
     transition: 200ms;
-    padding-left: 5px;
-    padding-right: 5px;
+    transform: scale(1.2);
 }
 .name>p{
 font-size: 1.6rem;
@@ -145,10 +144,9 @@ font-weight: 600;
     border: none;
   cursor: pointer;
 }
-button:hover{
-    height: 3rem;
-    width: 5.8rem;
-    transition: 0.2s;
+button:active{
+    transform: scale(0.97);
+    transition: 200ms;
 }
 /*----------SIDEBAR------------*/
 .sidebar{
@@ -252,6 +250,12 @@ margin-left: 40px;
     border-radius: 10px;
     box-shadow: 2px 4px 3px rgb(201, 201, 201) ;
 }
+.cards:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 6px 8px rgb(231, 139, 63);
+    transition: 800ms;
+    cursor: pointer;
+}
 .title{
     font-weight: 900;
     padding:6px;
@@ -278,7 +282,7 @@ margin-left: 40px;
 .actions>span:hover{
     cursor: pointer;
     background-color: yellow;
-    padding: 5px;
+    transform: scale(1.2);
     border-radius: 20px;
     transition: 200ms;
 
@@ -305,6 +309,15 @@ margin-left: 40px;
     box-shadow: 2px 4px 3px rgb(201, 201, 201) ; 
    
 }
+.side-ann:hover{
+    transform: scale(1.03);
+    transition: 500ms;
+}
+.side-ann-info:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+    transition: 500ms;
+}
 .side-ann-info{                              /*side-ann1 side-ann2 side-ann3*/
     display: flex;
     flex-direction: column;
@@ -312,6 +325,7 @@ margin-left: 40px;
     border-bottom: 1.8px solid rgb(194, 191, 191);
     padding-bottom: 1rem;
 }
+
 .side-ann-title{
     font-weight: 600;
     font-size: 1.3rem;
@@ -382,6 +396,9 @@ margin-left: 40px;
     font-size: 1.3rem;
     margin-left: 1rem;
     cursor: pointer;
+}
+.tren-about>h3:hover{
+    text-decoration: underline;
 }
 .tren-about > p{
     margin-left: 1rem;
